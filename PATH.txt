@@ -1,0 +1,7 @@
+PIP_INDEX_URL=http://autcbdpypi.corpnet.auo.com/simple
+PIP_TRUSTED_HOST=autcbdpypi.corpnet.auo.com
+
+
+D:\python3
+D:\python3\scripts
+D:\python3\Lib\site-packages
