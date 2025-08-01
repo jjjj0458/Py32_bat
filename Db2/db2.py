@@ -16,16 +16,16 @@ FLAGS = parser.parse_args()
 my_sql = FLAGS.sql
 cnx = pyodbc.connect(
         'Driver={IBM DB2 ODBC Driver}; '
-        'Hostname=10.84.66.214; '
-        'Port=21001; '
+        'Hostname=; '
+        'Port=; '
         'Protocol=TCPIP; '
-        'Database=adahs1; '
-        'CurrentSchema=schema; '
-        'UID=aryrpt; '
-        'PWD = aryrpt;'
+        'Database=; '
+        'CurrentSchema=; '
+        'UID=; '
+        'PWD = ;'
         )
 
-#cnxn = pyodbc.connect('DSN=ADAHS1;UID=aryrpt;PWD=aryrpt')
+
 df= pd.read_sql(my_sql,cnx)
 cnx.close()
 df = df.apply(lambda x:x.astype(str))
